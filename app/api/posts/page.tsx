@@ -6,7 +6,7 @@ import { NextApiRequest, NextApiResponse } from "next";
 import { Butcherman } from "next/font/google";
 import { createUser } from "@/lib/actions/time.action";
 
-const Page = async (req: NextApiRequest, res: NextApiResponse) => {
+export default async (req: NextApiRequest | any, res: NextApiResponse) => {
   const saveTime = async () => {
     try {
       console.log("test");
@@ -37,5 +37,3 @@ const Page = async (req: NextApiRequest, res: NextApiResponse) => {
     </div>
   );
 };
-
-export default Page;

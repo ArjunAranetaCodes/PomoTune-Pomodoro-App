@@ -128,7 +128,7 @@ function Timer() {
         </button>
 
         <button
-          className=" text-white font-bold py-2 px-4 mx-2 mx-auto"
+          className=" text-white font-bold py-2 px-4 mx-auto"
         >
           <UserButton />
           {/*<svg
