@@ -3,10 +3,11 @@
 import React from "react";
 import clientPromise from "../../../lib/mongodb";
 import { NextApiRequest, NextApiResponse } from "next";
+import type { NextRequest } from "next/server"
 import { Butcherman } from "next/font/google";
 import { createUser } from "@/lib/actions/time.action";
 
-export default async (req: NextApiRequest | any, res: NextApiResponse) => {
+export default async (req: NextRequest, res: NextApiResponse) => {
   const saveTime = async () => {
     try {
       console.log("test");
