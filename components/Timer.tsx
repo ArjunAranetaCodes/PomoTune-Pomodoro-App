@@ -6,7 +6,7 @@ import SettingsButton from "./SettingsButton";
 import { useContext, useState, useEffect, useRef } from "react";
 import SettingsContext from "./SettingsContext";
 import { saveTime, showUserStats } from "@/lib/actions/time.action";
-import { UserButton } from "@clerk/nextjs";
+import { SignIn, SignUpButton, UserButton } from "@clerk/nextjs";
 
 const yellow = "#FFC94A";
 const green = "#4aec8c";
@@ -37,8 +37,12 @@ function Timer() {
     //console.log(localStorage.getItem("localNextSeconds"));
   }
 
-  function switchMode(passedMode? : string) {
-    const nextMode = passedMode ? passedMode : modeRef.current === "work" ? "break" : "work";    
+  function switchMode(passedMode?: string) {
+    const nextMode = passedMode
+      ? passedMode
+      : modeRef.current === "work"
+      ? "break"
+      : "work";
     const nextSeconds =
       (nextMode === "work"
         ? settingsInfo.workMinutes
@@ -126,10 +130,8 @@ function Timer() {
         >
           Focus
         </button>
-
-        <button
-          className=" text-white font-bold py-2 px-4 mx-auto"
-        >
+        <button className=" text-white font-bold py-2 px-4 mx-auto">
+          <SignUpButton />
           <UserButton />
           {/*<svg
             xmlns="http://www.w3.org/2000/svg"
