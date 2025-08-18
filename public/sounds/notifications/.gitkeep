@@ -1,0 +1,6 @@
+# This file ensures the notifications folder is tracked by git
+# Add your notification audio files here:
+# - timer-end.mp3
+# - break-start.mp3  
+# - work-start.mp3
+# - task-complete.mp3 
