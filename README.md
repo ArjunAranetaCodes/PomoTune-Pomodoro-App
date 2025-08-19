@@ -1,27 +1,33 @@
-# Pomotune
+# vue-pomodoro
 
-Pomotune is a productivity app designed to help you manage your time more effectively using the Pomodoro Technique. This technique involves working for a set amount of time (usually 25 minutes) followed by a short break. After four work sessions, you take a longer break. This cycle helps maintain high levels of productivity and creativity.
+This template should help get you started developing with Vue 3 in Vite.
 
-## Features
+## Recommended IDE Setup
 
-- **Customizable Work and Break Sessions**: Adjust the length of your work and break sessions to suit your needs.
-- **Focus Mode**: Minimize distractions and stay focused on your tasks.
-- **Progress Tracking**: Keep track of your productivity over time.
-- **Sound Notifications**: Get notified when it's time to start a new session or take a break.
-- **Dark Mode**: Enjoy a sleek, dark-themed interface for a more relaxed experience.
+[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
 
-## Getting Started
+## Type Support for `.vue` Imports in TS
 
-To get started with Pomotune, follow these simple steps:
+TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
 
-1. Download and install the app from the GitHub repository.
-2. Open the app and customize your work and break durations.
-3. Start your first session and let Pomotune guide you through your productivity journey.
+## Customize configuration
 
-## Contributing
+See [Vite Configuration Reference](https://vite.dev/config/).
 
-We welcome contributions from the community. If you're interested in contributing to Pomotune, please read our [Contribution Guidelines](CONTRIBUTING.md) before submitting a pull request.
+## Project Setup
 
-## License
+```sh
+npm install
+```
 
-Pomotune is open-source software licensed under the [MIT License](LICENSE).
+### Compile and Hot-Reload for Development
+
+```sh
+npm run dev
+```
+
+### Type-Check, Compile and Minify for Production
+
+```sh
+npm run build
+```
